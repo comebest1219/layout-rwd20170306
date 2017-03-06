@@ -1,0 +1,237 @@
+@media screen and (min-width:1200px){
+/*1-2.寬度固定的區塊*/
+.fixed-width{
+    width: 1200px;
+    margin: auto; /*區塊裡的水平置中*/
+}
+/*1-3. 設定3欄的樣式*/
+/*若要設定同時設定margin及padding 必須在全部元素設定box-sizing: border-box;*/
+.col-3{
+    float: left;
+    width: 380px; /*1200/3=400px是全滿 要留空隙用margin或padding補滿*/
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.col-4{
+    float: left;
+    width: 280px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
+/*2-1.nav區塊高度 背景*/
+nav{
+    height: 45px;
+    background-color: #ac0808;
+}
+/*建議最外層還是要放名稱nav 直接寫class name除錯時不好找*/
+/*2-2 logo設定*/
+nav .logo{
+    float: left;
+    color: aliceblue;
+    line-height: 45px;
+}
+/*2-3 menu設定位置*/
+nav .menu{
+    float: right;
+}
+/*2-4清單設定內外距為0*/
+nav .menu ul{
+    margin: 0;
+    padding: 0;
+}
+/*2-5 清單列表位置樣式*/
+nav .menu li{
+    float: left;
+    list-style: none;
+} 
+/*2-6 清單連結設定*/
+nav .menu a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    line-height: 45px;  /*垂直置中*/
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    transition: all .5s; /*hover轉換動畫*/
+} 
+/*2-7連結hover轉換樣式*/
+nav .menu a:hover{
+    background-color: #555;
+} 
+/*3-1 圖片設定 不重複 固定 cover ,header設定為table*/
+header{
+    height: 750px;
+    background-image: url(img-001.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+
+    display: table;
+}
+/*3-2 header中的大區塊設定高度背景透明度,display設定為table-cell,才可以在table中使用vertical-align: middle */
+header .overlay{
+    height: 750px;
+    background-color: rgba(0,0,0,0.5);
+    display: table-cell;
+    vertical-align: middle;
+}
+/*3-3 內容區塊設定 
+  兩種-區塊水平置中margin: auto & 文字置中text-align: center*/
+header .content{
+    color: #fff;
+    width: 500px; /*可不設寬度 p部分換行用<br>*/
+    margin: auto;
+    text-align: center;
+}
+/*3-4 標題設定*/
+header .content h1{
+    font-size: 120px;
+}
+/*3-5 連結設定內外距,display設為inline-block較簡單*/
+/*若設定block要設定a為absolute .content為reletive
+  a的margin: calc(50% - 80px);*/
+header .content a{
+    display: inline-block;
+    width: 160px;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #ba162f;
+    text-decoration: none;
+    margin-top: 20px;
+}
+/*4-1 about區塊內外距顏色設定*/
+#about{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: rgba(221, 234, 233, 0.52)
+}
+#about h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#about .col-3{
+    padding-top: 70px;
+}
+#about .col-3 h3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#about .col-3 p{
+    line-height: 2em; /*字行間隔*/
+    opacity: 0.8; /* 透明度*/
+    text-align: left;
+}
+.icon{
+    color:#801212;
+}
+
+/*5-1 設定works區塊*/
+#works{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+#works .col-3{
+    height: 350px;
+    background-color: #00f8d2;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#works h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#works p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#works img{
+    width: 100%;
+    height: 100%;
+}
+
+/*6-1 設定products區塊*/
+#products{
+    padding-top: 100px;
+    padding-bottom: 300px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+
+}
+#products .col-4{
+    height: 350px;
+    background-color: #00f8d2;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#products h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#products p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#products img{
+    width: 100%;
+    height: 100%;
+}
+#products h3,h4 {
+    margin: 15px 0 15px 0;
+}
+#products h5{
+    opacity: 0.8;
+    margin: 10px 0 10px 0;
+}
+#products span{
+    opacity: 0.8;
+}
+#products a{
+    margin-top: 15px;
+    color:#e3d2d2;
+    margin: 7px;
+/*            letter-spacing: 0.6em;*/
+    text-decoration: none;
+    font-size: 20px;
+}
+#products a:hover{
+    color:rgba(126, 9, 45, 0.99);
+}
+
+/*7-2 footer區塊設定*/
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #333;
+    color :#eee;
+}
+footer a{
+    color: #eee;
+    text-decoration: none;
+    margin-left: 30px;
+}
+footer .copyrights{
+    font-size: 22px;
+    float: left;
+}
+footer .sns{
+    color :#eee;
+    float: right;
+}
+}

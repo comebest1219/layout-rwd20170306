@@ -1,0 +1,24 @@
+/*0-1 設定全部元素字形 
+          設定所有元素的內距和邊框將不會增加元素本身的寬度*/
+*{
+    font-family:'Sansita', sans-serif;
+    box-sizing: border-box;
+}
+
+/*0-2.CSS RESET*/
+body,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+/*0-3.清除float*/
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/*1-1.寬度100%的區塊*/
+.full-width{
+    width:100%;
+}

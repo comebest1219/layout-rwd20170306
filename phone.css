@@ -1,0 +1,253 @@
+@media screen and (max-width:480px){
+ 
+/*9-1 刪除margin width改100%*/    
+.fixed-width{
+    width: 100%;
+}
+    
+/*9-2 刪除margin與float width改100%*/
+/*若不是設100% 可使用margin auto水平置中*/
+.col-3{
+    width: 96%;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.col-4{
+    width: 96%;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+/*9-3 刪除nav高度
+    刪除.logo .menu li的float*/
+/*9-4 配置.logo與.menu .a文字位置*/
+nav{
+    background-color: #ac0808;
+}
+
+nav .logo{
+    color: aliceblue;
+    line-height: 45px;
+    text-align: center;
+    border-bottom: 1.5px solid #555;
+}
+
+nav .menu{
+}
+
+nav .menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu li{
+    list-style: none;
+    border-bottom: 1px solid #555;
+} 
+
+nav .menu a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    line-height: 45px;  
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    transition: all .5s; 
+} 
+
+/*9-5 手機沒有hover 全部刪除*/
+/*
+nav .menu a:hover{
+    background-color: #555;
+} 
+*/
+
+/*9-6
+  header的 background-position: center
+  height改小一點 
+  標題內文字改小一點
+  .content a可以調整
+  header .content寬度改100%或刪除
+*/
+header{
+    height: 400px;
+    background-image: url(img-001.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    display: table;
+}
+
+header .overlay{
+    height: 400px;
+    background-color: rgba(0,0,0,0.5);
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header .content{
+    color: #fff;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+header .content h1{
+    font-size: 60px;
+}
+
+header .content a{
+    display: inline-block;
+    width: 80%;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #ba162f;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#about{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: rgba(221, 234, 233, 0.52)
+}
+#about h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#about .col-3{
+    padding-top: 70px;
+    
+}
+#about .col-3 h3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#about .col-3 p{
+    line-height: 2em; 
+    opacity: 0.8; 
+    text-align: left;
+}
+.icon{
+    color:#801212;
+}
+
+
+#works{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+#works .col-3{
+    height: 350px;
+    background-color: #00f8d2;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 30px;
+}
+#works h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#works p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#works img{
+    width: 100%;
+    height: 100%;
+}
+
+/*9-7
+    #products 上下padding調整
+    #products .col-4 高度刪除
+*/
+#products{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+}
+#products .col-4{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 20px;
+}
+#products h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#products p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#products img{
+    width: 100%;
+    height: 100%;
+}
+#products h3,h4 {
+    margin: 15px 0 15px 0;
+}
+#products h5{
+    opacity: 0.8;
+    margin: 10px 0 10px 0;
+}
+#products span{
+    opacity: 0.8;
+}
+#products a{
+    margin-top: 15px;
+    color:#e3d2d2;
+    margin: 7px;
+    text-decoration: none;
+    font-size: 20px;
+}
+#products a:hover{
+    color:rgba(126, 9, 45, 0.99);
+}
+
+
+/*9-8
+    footer文字置中
+    footer a設定margin
+    消除.copyrights .sns的float 調整字大小
+*/    
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #333;
+    color :#eee;
+    text-align: center;
+}
+footer a{
+    color: #eee;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+footer .copyrights{
+    font-size: 20px;
+    line-height: 50px;
+}
+    
+
+footer .sns{
+    font-size: 12px;
+    color :#eee;
+}
+
+    
+}
